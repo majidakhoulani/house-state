@@ -1,25 +1,113 @@
 {
-  "users": [
-    {
-      "id": 1,
-      "name": "majida"
-    }
-  ],
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+"properties": [
+{
+"id": 1,
+"details": [
+{
+"square": "2500 ft sq",
+"roomNumber": "5 Bedroom",
+"bathNumber": "5 Bathroom",
+"garageNumber": "2 Garage"
+}
+
+],
+"image": "../src/assets/cards/property-1.jpg",
+"category": "Rent",
+"title": "Properties Near in Beach",
+"price": 3000,
+"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores.",
+"address": "Thomas Street, St. Louis, MO 8990, USA",
+"quantity":0
+},
+{
+"id": 2,
+"details": [
+{
+"square": "2500 ft sq",
+"roomNumber": "5 Bedroom",
+"bathNumber": "5 Bathroom",
+"garageNumber": "2 Garage"
+}
+],
+"image": "../src/assets/cards/property-2.jpg",
+"category": "Sale",
+"title": "Properties Near in City",
+"price": 3500,
+"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores.",
+"address": "Thomas Street, St. Louis, MO 8990, USA",
+"quantity":0
+},
+{
+"id": 3,
+"details": [
+{
+"square": "3000 ft sq",
+"roomNumber": "6 Bedroom",
+"bathNumber": "3 Bathroom",
+"garageNumber": "3 Garage"
+}
+],
+"image": "../src/assets/cards/property-3.jpg",
+"category": "Rent",
+"title": "Properties Near in Country",
+"price": 5000,
+"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores.",
+"address": "Thomas Street, St. Louis, MO 8990, USA",
+"quantity":0
+},
+{
+"id": 4,
+"details": [
+{
+"square": "2500 ft sq",
+"roomNumber": "5 Bedroom",
+"bathNumber": "5 Bathroom",
+"garageNumber": "2 Garage"
+}
+],
+"image": "../src/assets/cards/property-4.jpg",
+"category": "Sale",
+"title": "Properties Near in River",
+"price": 4000,
+"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores.",
+"address": "Thomas Street, St. Louis, MO 8990, USA",
+"quantity":0
+},
+{
+"id": 5,
+"details": [
+{
+"square": "2000 ft sq",
+"roomNumber": "5 Bedroom",
+"bathNumber": "2 Bathroom",
+"garageNumber": "1 Garage"
+}
+],
+"image": "../src/assets/cards/property-5.jpg",
+"category": "Sale",
+"title": "Properties Near in forest",
+"price": 3000,
+"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores.",
+"address": "Thomas Street, St. Louis, MO 8990, USA",
+"quantity":0
+},
+{
+"id": 6,
+"details": [
+{
+"square": "2500 ft sq",
+"roomNumber": "5 Bedroom",
+"bathNumber": "5 Bathroom",
+"garageNumber": "2 Garage"
+}
+],
+"image": "../src/assets/cards/property-6.jpg",
+"category": "Rent",
+"title": "Properties Near in CityCenter",
+"price": 4000,
+"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores.",
+"address": "Thomas Street, St. Louis, MO 8990, USA",
+"quantity":0
+}
+]
 }
