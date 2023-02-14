@@ -6,10 +6,16 @@
  <TeamSection/>
  <BlogSection/>
  <ContactSection/>
+ <ModelLogIn
+/>
+<ModelRegister
+/>
  <FooterSection/>
 </template>
 
 <script>
+import ModelLogIn from '../components/ModelLogIn.vue'
+import ModelRegister from '../components/ModelRegister.vue'
 import BlogSection from '@/components/BlogSection.vue';
 import ContactSection from '@/components/ContactSection.vue';
 import FooterSection from '@/components/FooterSection.vue';
@@ -27,7 +33,10 @@ export default{
     BlogSection,
     ContactSection,
     FooterSection,
-    TestimonialsSection
+    TestimonialsSection,
+    ModelLogIn,
+    ModelRegister
+
 }
 }
 

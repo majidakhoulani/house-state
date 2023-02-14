@@ -13,11 +13,12 @@
        <v-card  data-aos="zoom-in"  data-aos-duration="3000">
         <v-img
               :src="card.src"
-              class="align-end"
+              class="align-start"
               height="300px"
               cover
             >
-           <v-card-title class="text-white text-left w-25 bg-primary ml-4" v-text="card.price" style="border:1px solid #44c662"></v-card-title>
+            <v-card-title class=" bg-primary text-white-override" v-text="card.categorey"></v-card-title>
+           <v-card-title class=" category text-center w-25 bg-primary ml-4"  v-text="card.price" ></v-card-title>
             <v-card-subtitle class="text-white text-left pa-4 text-h6" v-text="card.title"></v-card-subtitle></v-img>
 
        </v-card>
@@ -37,16 +38,19 @@ export default{
     cards:[
       {
       src:'../src/assets/cards/property-1.jpg',
+      categorey:'Rent',
       price:'$3000',
       title:'Properties Near in Beach, USA California'
     },
     {
       src:'../src/assets/cards/property-2.jpg',
+      categorey:'Sale',
       price:'$2000',
       title:'Modern House at NZ'
     },
     {
       src:'../src/assets/cards/property-3.jpg',
+      categorey:'Rent',
       price:'$3000',
       title:'Bonggalo House'
     }
@@ -58,3 +62,20 @@ export default{
   },
 }
 </script>
+<style>
+.category{
+ margin-top:35%;
+ color:#fff !important;
+ opacity: 0.9;
+
+}
+.text-white-override{
+  color:#fff !important;
+  opacity: 0.9;
+  width: 15%;
+  font-size: 12px;
+  transform: skewX(25deg);
+  /* transform: rotate3d(90deg) */
+
+}
+</style>

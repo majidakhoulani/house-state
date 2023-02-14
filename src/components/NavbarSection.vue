@@ -13,10 +13,43 @@
 
     <template v-slot:append>
       <v-btn class="text-grey-darken-4" variant="plain" to="/">Home</v-btn>
-      <v-btn variant="plain" to="/property">Properties</v-btn>
+      <v-btn variant="plain" to="/property" v-if="isLoggedIn">Properties</v-btn>
       <v-btn variant="plain">Agent</v-btn>
       <v-btn variant="plain">Blog</v-btn>
       <v-btn variant="plain">Contact</v-btn>
+      <form>
+        <!--           data-bs-toggle="modal"
+            data-bs-target="#login" -->
+            <!-- v-if="!isLoggedIn" -->
+          <v-btn
+
+            class="btn btn-outline-primary mx-2"
+            to="/sign-in"
+
+          >
+            Sign in
+          </v-btn>
+          <!-- Cerrar sesión -->
+          <v-btn
+            v-if="isLoggedIn"
+            class="btn btn-outline-danger me-2"
+            @click="signout()"
+          >
+            Log out
+          </v-btn>
+          <!-- Regístrate -->
+          <!-- data-bs-toggle="modal" -->
+            <!-- data-bs-target="#registro" -->
+          <v-btn
+            v-if="!isLoggedIn"
+            type="button"
+            class="btn btn-outline-warning"
+
+            to="/log-in"
+          >
+            Regístrate
+          </v-btn>
+        </form>
        <v-btn variant="plain"  to="/cart">
         <!-- {{cartCount }} -->
         <v-badge
@@ -41,7 +74,9 @@
 <script>
 import { useTheme } from 'vuetify'
 import { useCartStore } from '@/store/cart'
-import { mapState } from 'pinia'
+import { mapActions, mapState } from 'pinia'
+import { almacen } from "@/store/auth"
+// const datos = almacen();
 export default{
   setup(){
     const theme = useTheme()
@@ -51,16 +86,21 @@ export default{
     }
   },
   data(){
-    return{}
+    return{
+      // isLoggedIn:'true'
+    }
   },
   computed:{
-    ...mapState(useCartStore,['cartContent','cartCount'])
+    ...mapState(useCartStore,['cartContent','cartCount']),
+    ...mapState(almacen ,['isLoggedIn'])
   },
   methods:{
     toggleLocal(){
       this.$i18n.locale = this.$i18n.locale ==='ar'?'en':'ar'
       this.$vuetify.locale.current = this.$vuetify.locale.current ==='ar'?'en':'ar'
-    }
+    },
+    ...mapActions(almacen ,['signout'])
+
   }
 }
 </script>

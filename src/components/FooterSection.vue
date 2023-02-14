@@ -35,9 +35,11 @@
                     <v-form ref="form" id="form" class="pt-4">
                       <div class="d-flex">
                         <v-text-field v-model="name" label="Enter Your Name"
-                            required bg-color="" color="primary">
+                            required  color="primary">
+                            <div color="primary" ><v-icon icon="mdi-send" class=" text-center  w-25 pa-7"  size="40" color="primary"></v-icon></div>
                         </v-text-field>
-                        <v-icon icon="mdi-telegram" class="text-white bg-primary text-left w-25 pa-7" size="40"></v-icon>
+
+
                       </div>
                     </v-form>
 
@@ -90,3 +92,9 @@
 
     }
 </script>
+<style
+>
+/* .text-white-override1{
+  color:#fff !important
+} */
+</style>

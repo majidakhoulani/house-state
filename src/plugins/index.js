@@ -19,6 +19,7 @@ import router from '../router'
 import {VueAxios,axios } from './axios'
 import i18n from '@/i18n'
 
+
 export function registerPlugins (app) {
   loadFonts()
   app
