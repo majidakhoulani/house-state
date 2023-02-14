@@ -1,0 +1,1 @@
+import"./VTextField.44169561.js";import{m as t,u as n}from"./VIcon.4a4a3cdc.js";import{i as r,c as s}from"./index.127e067f.js";const f=r({name:"VContainer",props:{fluid:{type:Boolean,default:!1},...t()},setup(e,a){let{slots:o}=a;return n(()=>s(e.tag,{class:["v-container",{"v-container--fluid":e.fluid}]},o)),{}}});export{f as V};
