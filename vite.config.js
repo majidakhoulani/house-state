@@ -36,6 +36,9 @@ export default defineConfig({
       '.vue',
     ],
   },
+  build: {
+    chunkSizeWarningLimit: 1600,
+  },
   server: {
     port: 3000,
   },

@@ -1,6 +1,6 @@
 <template>
     <section class="pt-8 pb-16 bg-grey-lighten-4">
-        <v-img src="@/assets/cards/cover_bg_1.jpg">
+        <v-img src="@/assets/cards/cover_bg_1.jpg" cover>
             <div class="text-center pb-16 pt-4">
                 <h1 class="text-h3 pa-4 text-primary">Happy Clients</h1>
                 <!-- <p class="text-subtitle-2  text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores</p> -->
@@ -69,14 +69,14 @@ import AOS from 'aos'
         data() {
             return {
               testimonials: [{
-                        description:' “Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgr right at the coast of the Semantics, a large language ocean.”',
+                        description:' Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgr right at the coast of the Semantics, a large language ocean.',
                         src: '../src/assets/testimonials/testimonials-4.jpg',
                         title: 'John Doe',
                         subtitle: 'Sales',
                         height:'298'
                     },
                     {
-                      description:' “Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgr right at the coast of the Semantics, a large language ocean.”',
+                      description:' Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgr right at the coast of the Semantics, a large language ocean.',
                         src: '../src/assets/testimonials/testimonials-6.jpg',
                         title: 'Mia Asano',
                         subtitle: 'Sales',

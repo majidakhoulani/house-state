@@ -22,7 +22,7 @@
    :key="i"
    eager
    >
-      <v-parallax :src="slide.src"></v-parallax>
+      <v-parallax :src="slide.src" height="600"></v-parallax>
    </v-carousel-item>
 </v-carousel>
 </template>
@@ -32,15 +32,19 @@ export default{
     return{
       slides:[{
         id:1,
-        src:'../src/assets/hero/img_bg_1.jpg'
+        src:'../src/assets/hero/img_bg_1.jpg',
+
+
       },
       {
         id:2,
-        src:'../src/assets/hero/img_bg_2.jpg'
+        src:'../src/assets/hero/img_bg_2.jpg',
+
       },
       {
         id:2,
-        src:'../src/assets/hero/img_bg_3.jpg'
+        src:'../src/assets/hero/img_bg_3.jpg',
+
       }
     ]
     }

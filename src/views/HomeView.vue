@@ -6,10 +6,10 @@
  <TeamSection/>
  <BlogSection/>
  <ContactSection/>
- <ModelLogIn
+ <!-- <ModelLogIn
 />
 <ModelRegister
-/>
+/> -->
  <FooterSection/>
 </template>
 

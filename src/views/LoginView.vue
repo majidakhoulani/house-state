@@ -1,99 +1,51 @@
 <template>
-  <section class="login text-center pt-16 pb-16">
+  <section class="login text-center pt-16 pb-16 h-100">
+    <div  class=" text-center w-50 ma-auto" style="background-color:#536642">
       <div class="login-title pt-6">
-          <h1 class="text-h4 font-weight-bold pb-2 text-dark">Create an Account</h1>
-          <p class="text-grey font-italic">Welcome To Our Website</p>
+          <h1 class="text-h4 font-weight-bold pb-2 text-primary">Create an Account</h1>
+          <p class=" font-italic" style="color: rgb(228, 190, 141)">Welcome To Our Website</p>
       </div>
       <div class="login-content mt-12 ">
           <v-container>
               <v-row no-gutters>
-                  <v-col cols="4" class="ma-auto">
-                    <!-- @submit.prevent="submit" -->
+                  <v-col cols="12" class="ma-auto" xs="12" sm="9" >
                       <v-form >
-                          <v-text-field type="text" v-model="email" label="Email"></v-text-field>
-
-                          <v-text-field v-model="password" type="password" label="Password">
+                          <v-text-field type="text" v-model="email" label="Email" variant="solo"></v-text-field>
+                          <v-text-field v-model="password" type="password" label="Password" variant="solo">
                           </v-text-field>
-                          <v-btn color="#ffc800" elevation="2" class="mt-12 pa-2 h-50 mr-16" width="150px"
-                              type="submit" @click="register">
-                              <span class="text-white text-uppercase text-h6">Register</span>
+                          <v-btn elevation="2" class="mt-4 mb-4 pa-2 h-50 w-100 mr-12"
+                              @click="register" style="border-color:#44c662;background-color:#536642"  variant="outlined">
+                              <span class="text-white text-uppercase text-h6">SignIn</span>
                           </v-btn>
-                          <v-btn color="#ffc800" elevation="2" class="mt-12 pa-2 h-50" width="150px"
-                              type="submit" @click="SignINWithGoogle">
-                              <span class="text-white text-uppercase text-h6">SignINWithGoogle</span>
+                          <v-btn elevation="2" class="mt-4 mb-4 pa-2 w-100 h-50"
+                              @click="SignINWithGoogle" style="border-color:#44c662;background-color:#536642" variant="outlined">
+                              <span class="text-white text-uppercase text-h6">WithGoogle</span>
                           </v-btn>
                       </v-form>
                   </v-col>
               </v-row>
           </v-container>
       </div>
+    </div>
   </section>
 
   <TheFooter />
 </template>
 <script>
 import { almacen } from '@/store/auth'
-import { mapState } from 'pinia'
+import { mapState,mapWritableState } from 'pinia'
 import { mapActions } from 'pinia'
-// import {
-//   getAuth,
-//   signOut,
-//   createUserWithEmailAndPassword,
-//   signInWithEmailAndPassword,
-// } from "firebase/auth";
 export default{
   computed:{
-    ...mapState(almacen ,['email','password'])
+    ...mapWritableState(almacen ,['email','password'])
   },
-  // data(){
-  //   return{
-  //   password:'',
-  //   email:'',
-  //   errorMessage: ''
-  //   }
-
-  // },
   methods:{
     ...mapActions(almacen ,['register'])
-    // register() {
-    //   const auth = getAuth();
-    //   createUserWithEmailAndPassword(auth, this.email.value, this.password.value)
-    //     // .then((userCredential) => {
-    //     //   const user = userCredential.user;
-    //     //   alert("successfully registered");
-    //     //   router.push("/property");
-    //     // })
-    //          .then((data) => {
-    //       const user = userCredential.user;
-    //       alert("successfully registered");
-    //       router.push("/property");
-    //     })
-    //     .catch((error) => {
-    //       const errorCode = error.code;
-    //       this.errorMessage = error.message;
-    //       alert(this.errorMessage);
-    //     });
-    // },
-
   }
 }
-  // export default {
-  //     data() {
-  //         return {
-  //             email: '',
-  //             password: '',
-  //         }
-  //     },
-  //     methods: {
-  //         submit() {
-  //             this.login(this.username, this.password)
-  //         },
-  //         ...mapActions(useUserStore, ['login'])
-  //     }
-  // }
 </script>
 <style>
-  .login {
-      background-color: #F8F9FA;
+   .login {
+      background-color: rgb(228, 190, 141);
   }
 </style>

@@ -44,8 +44,8 @@
                             </v-img>
                             <div class="property-details text-left bg-grey-lighten-4 pa-2">
                                 <v-card-text class="text-h6 text-grey-darken-4 pt-4 pb-4">{{ card . title }}</v-card-text>
-                                <v-card-subtitle class="text-h5 text-primary pt-4 pb-4">$ {{ card . price }}</v-card-subtitle>
-                                <v-card-text class="text-subtitle-4 text-grey pt-4 pb-4">{{ card . description }}</v-card-text>
+                                <v-card-text class="text-h5 text-primary pt-4 pb-4">$ {{ card . price }}</v-card-text>
+                                <v-card-subtitle class="text-subtitle-4 text-grey pt-4 pb-4">{{ card . description }}</v-card-subtitle>
                                 <v-btn variant="text" color="primary" @click="addToCard(card)" >
                                     <v-icon color="primary" size="24">mdi-cart</v-icon>
                                     addToCard
