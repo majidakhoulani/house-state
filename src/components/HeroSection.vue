@@ -32,18 +32,18 @@ export default{
     return{
       slides:[{
         id:1,
-        src:'../src/assets/hero/img_bg_1.jpg',
+        src:'/assets/hero/img_bg_1.jpg',
 
 
       },
       {
         id:2,
-        src:'../src/assets/hero/img_bg_2.jpg',
+        src:'/assets/hero/img_bg_2.jpg',
 
       },
       {
         id:2,
-        src:'../src/assets/hero/img_bg_3.jpg',
+        src:'/assets/hero/img_bg_3.jpg',
 
       }
     ]

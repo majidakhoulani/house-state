@@ -45,19 +45,19 @@ export default{
   return{
     blogs:[
       {
-      src:'../src/assets/cards/property-1.jpg',
+      src:'/assets/cards/property-1.jpg',
       title:'Properties for sale',
       subtitle:'Sep. 15th',
       explain:''
     },
     {
-      src:'../src/assets/cards/property-2.jpg',
+      src:'/assets/cards/property-2.jpg',
       title:'Modern Home',
       subtitle:'Dec. 20th',
       explain:''
     },
     {
-      src:'../src/assets/cards/property-3.jpg',
+      src:'/assets/cards/property-3.jpg',
       title:'15% Deal Discount For House',
       subtitle:'Oct. 10th',
       explain:''

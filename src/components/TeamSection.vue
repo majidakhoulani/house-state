@@ -52,7 +52,7 @@ import AOS from 'aos'
 
         teamList: [{
                   id: 1,
-                  src: '../src/assets/clients/user-1.jpg',
+                  src: '/assets/clients/user-1.jpg',
                   title: 'Jean Smith',
                   explain: 'Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat',
                   href:'https://github.com/majidakhoulani'
@@ -60,21 +60,21 @@ import AOS from 'aos'
               },
               {
                   id: 2,
-                  src: '../src/assets/clients/user-2.jpg',
+                  src: '/assets/clients/user-2.jpg',
                   title: 'Hush Raven',
                   explain: 'Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat',
                   href:'https://github.com/majidakhoulani'
               },
               {
                   id: 3,
-                  src: '../src/assets/clients/user-3.jpg',
+                  src: '/assets/clients/user-3.jpg',
                   title: 'Alex King',
                   explain: 'Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat',
                   href:'https://github.com/majidakhoulani'
               },
               {
                   id: 4,
-                  src: '../src/assets/clients/user-4.jpg',
+                  src: '/assets/clients/user-4.jpg',
                   title: 'Hush Raven',
                   explain: 'Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat',
                   href:'https://github.com/TaiseerAlmedani'

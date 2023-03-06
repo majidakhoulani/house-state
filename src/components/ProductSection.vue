@@ -37,19 +37,19 @@ export default{
   return{
     cards:[
       {
-      src:'../src/assets/cards/property-1.jpg',
+      src:'/assets/cards/property-1.jpg',
       categorey:'Rent',
       price:'$3000',
       title:'Properties Near in Beach, USA California'
     },
     {
-      src:'../src/assets/cards/property-2.jpg',
+      src:'/assets/cards/property-2.jpg',
       categorey:'Sale',
       price:'$2000',
       title:'Modern House at NZ'
     },
     {
-      src:'../src/assets/cards/property-3.jpg',
+      src:'/assets/cards/property-3.jpg',
       categorey:'Rent',
       price:'$3000',
       title:'Bonggalo House'

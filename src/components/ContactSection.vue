@@ -24,7 +24,7 @@
                     </v-form>
                 </v-col>
                 <v-col cols="12" sm="6">
-                    <v-img src="@/assets/clients/cover_bg_2.jpg" cover class="h-100"></v-img>
+                    <v-img src="/assets/clients/cover_bg_2.jpg" cover class="h-100"></v-img>
                 </v-col>
             </v-row>
         </div>
